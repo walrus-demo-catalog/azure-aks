@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: OpenAPI schema for template azure-aks
+components:
+  schemas:
+    variables:
+      type: object
+      required:
+      - name
+      - principal_id
+      properties:
+        name:
+          title: Name
+          type: string
+          description: The name of the Azure Kubernetes cluster
+          x-walrus-ui:
+            group: Basic
+            order: 1
+        location:
+          title: Location
+          type: string
+          description: The Azure Region in which all resources in this module should
+            be provisioned
+          default: westus
+          x-walrus-ui:
+            group: Basic
+            order: 2
+        principal_id:
+          title: Principal Id
+          type: string
+          description: The ID of the Principal (User, Group or Service Principal)
+            to assign the Cluster Managed Role Definition to
+          x-walrus-ui:
+            group: Basic
+            order: 3
+      x-walrus-ui:
+        groupOrder:
+        - Basic
