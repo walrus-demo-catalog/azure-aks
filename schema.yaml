@@ -25,14 +25,6 @@ components:
           x-walrus-ui:
             group: Basic
             order: 2
-        principal_id:
-          title: Principal Id
-          type: string
-          description: The ID of the Principal (User, Group or Service Principal)
-            to assign the Cluster Managed Role Definition to
-          x-walrus-ui:
-            group: Basic
-            order: 3
       x-walrus-ui:
         groupOrder:
         - Basic
