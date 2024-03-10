@@ -7,7 +7,6 @@ components:
       type: object
       required:
       - name
-      - principal_id
       properties:
         name:
           title: Name
